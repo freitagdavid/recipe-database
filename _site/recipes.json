@@ -1,0 +1,28 @@
+
+
+[
+    {
+        "title": "Borscht",
+        "image": "images/large/beet-borscht.jpg"
+    },
+
+    {
+        "title": "Chicken Taco Soup",
+        "image": "images/large/chicken-taco-soup.jpg"
+    },
+
+    {
+        "title": "General Tsao Chicken",
+        "image": "images/large/general-tsao.jpg"
+    },
+
+    {
+        "title": "Keto Chicken Pesto Casserole",
+        "image": "images/large/keto-pesto-chicken.jpg"
+    },
+
+    {
+        "title": "Mexican Meatloaf",
+        "image": "images/large/mexican-meatloaf.jpg"
+    }
+]

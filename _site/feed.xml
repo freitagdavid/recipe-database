@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chowdown</title>
+    <description>The plain text recipe database for hackers</description>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 08 Mar 2022 14:33:44 +0000</pubDate>
+    <lastBuildDate>Tue, 08 Mar 2022 14:33:44 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Borscht</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/beet-borscht.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/beet-borscht.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Chicken Taco Soup</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/chicken-taco-soup.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/chicken-taco-soup.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>General Tsao Chicken</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/general-tsao.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/general-tsao.html</guid>
+        
+        <category>meat,</category>
+        
+        <category>chicken,</category>
+        
+        <category>asian,</category>
+        
+        <category>main</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Keto Chicken Pesto Casserole</title>
+        <description>&lt;p&gt;From https://www.dietdoctor.com/recipes/keto-pesto-chicken-casserole
+7 Servings&lt;/p&gt;
+</description>
+        <link>http://0.0.0.0:4000/recipes/keto-pesto-chicken.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/keto-pesto-chicken.html</guid>
+        
+        <category>chicken,</category>
+        
+        <category>casserole,</category>
+        
+        <category>keto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mexican Meatloaf</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/mexican-meatloaf.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/mexican-meatloaf.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
