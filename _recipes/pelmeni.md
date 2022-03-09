@@ -6,5 +6,5 @@
 
     components:
     - Pelmini Dough
-    - Pelmini filling
+    - Pelmini Filling
 ---
