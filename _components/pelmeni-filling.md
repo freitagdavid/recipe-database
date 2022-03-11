@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: "Pelmini Filling"
+title: "Pelmeni Filling"
 
 ingredients:
     - 1000 g potatoes

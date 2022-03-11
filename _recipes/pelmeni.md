@@ -5,6 +5,6 @@
     directions:
 
     components:
-    - Pelmini Dough
-    - Pelmini Filling
+    - Pelmeni Dough
+    - Pelmeni Filling
 ---

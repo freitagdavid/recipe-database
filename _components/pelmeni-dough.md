@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: "Pelmini Dough"
+title: "Pelmeni Dough"
 
 ingredients:
     - 360 grams all-purpose flour
