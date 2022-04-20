@@ -12,10 +12,10 @@ ingredients:
     - 4 large potatoes
     - 6 oz can tomato paste
     - salt (to taste)
-    - 3 bay leaves (or more, depends on slav you are)
+    - 3 bay leaves (or more, depends on how slav you are) :D
+    - 3 garlic cloves (or more, see above)
     - 1 tbsp white vinegar
     - Pinch of sugar / maple syrup
-    - 3 garlic cloves (or more, see above)
     - black pepper (to taste)
     - 1/4 cup dill or parsley or both
     - sour cream (sub yogurt)
@@ -44,5 +44,5 @@ directions:
     - Let it sit for about 10 minutes for the flavors to marry.
     - Add dill, and adjust any seasonings.
 
-body: The way I like to serve it, toast your sourdough, scrape a clove of garlic all over the bread, spread sour cream over the bread sprinkle with a generous amount of dill. The throw a big dollop of sour cream into the borscht, and once again sprinkle a generous amount of dill on top. I like to dip the bread in the borscht. Something I quite like that I read is a traditional way of eating borscht in Ukraine is to take a small bite of the garlic clove between bites of borscht it's quite good. Enjoy feel free to stir the sour cream into the soup or not it's up to you.
+body: The way I like to serve it, toast your sourdough, scrape a clove of garlic all over the bread, spread sour cream over the bread sprinkle with a generous amount of dill. Then throw a big dollop of sour cream into the borscht, and once again sprinkle a generous amount of dill on top. I like to dip the bread in the borscht. Something I quite like that I read is somethine some people do is to take a small bite of the garlic clove between bites of borscht it's quite good.
 ---
