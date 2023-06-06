@@ -5,19 +5,19 @@ image: beet-borscht.jpg
 
 ingredients:
     - 1 large cabbage red/green
-    - 12 cups beef/vegetable/chicken broth, any broth will work
+    - 12 cups beef/vegetable/chicken broth, any broth will work, I like beef bone broth
     - 1 large onion
-    - 3 medium carrots
-    - olive oil (healthy)/sunflower oil(authentic)
     - 4 large potatoes
-    - 6 oz can tomato paste
-    - salt (to taste)
-    - 3 bay leaves (or more, depends on how slav you are) :D
+    - 3 medium carrots
     - 3 garlic cloves (or more, see above)
+    - 3 bay leaves (or more, depends on how slav you are) :D
+    - 1/4 cup dill or parsley or both
+    - lard/sunflower oil
+    - 6 oz can tomato paste
     - 1 tbsp white vinegar
     - Pinch of sugar / maple syrup
     - black pepper (to taste)
-    - 1/4 cup dill or parsley or both
+    - salt (to taste)
     - sour cream (sub yogurt)
     - (Optional) MSG (Use a lot more than you think you should)
     - (OPtional) Sour Dough/Rye toast
