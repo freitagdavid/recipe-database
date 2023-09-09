@@ -2,6 +2,7 @@
 layout: recipe
 title: "Broccoli and Cauliflower Gratin with Sausage"
 image: "broccoli-and-cauliflower-gratin-with-sausage.avif"
+tags: keto
 
 ingredients:
     - 1 leek
