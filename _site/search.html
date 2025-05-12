@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full">
 
   <head>
   <meta charset="utf-8">
@@ -9,22 +9,93 @@
   <title>Chowdown</title>
   <meta name="description" content="The plain text recipe database for hackers">
 
-  <link href="/css/bass.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://0.0.0.0:4000/search.html">
-  <link rel="alternate" type="application/rss+xml" title="Chowdown" href="http://0.0.0.0:4000/feed.xml" />
+  
+  <link rel="canonical" href="/search.html">
+  <link rel="alternate" type="application/rss+xml" title="Chowdown" href="/feed.xml" />
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
   
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/site.webmanifest">
-  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#007fff">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icons/favicon-512x512.png">
+  <link rel="manifest" href="/manifest.json">
   <link rel="shortcut icon" href="/icons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#007fff">
+  <meta name="msapplication-TileColor" content="#F53200">
   <meta name="msapplication-config" content="/icons/browserconfig.xml">
-  <meta name="theme-color" content="#007fff">
+  <meta name="theme-color" content="#F53200">
+
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chowdown">
+  <meta property="og:description" content="The plain text recipe database for hackers">
+  <meta property="og:image" content="/assets/social.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="chowdown.io">
+  <meta property="twitter:url" content="">
+  <meta name="twitter:title" content="Chowdown">
+  <meta name="twitter:description" content="The plain text recipe database for hackers">
+  <meta name="twitter:image" content="/assets/social.png">
+
+
+  <style>
+    @view-transition {
+      navigation: auto;
+    }
+    .overflow-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    .overflow-scroll {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/htf0jhw.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#F53200', // Add your primary color
+          },
+          boxShadow: {
+            '3xl': '0 0px 60px -15px rgba(0, 0, 0, 0.5)',
+          },
+          fontFamily: {
+            gelica: ['gelica', 'sans-serif'], // Add your custom font
+            inter: ['inter', 'sans-serif'], // Add your custom font
+          },
+        },
+      },
+    };
+  </script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker.controller) {
+      console.log("An active service worker found, no need to register");
+    } else {
+      // Register the service worker
+      navigator.serviceWorker
+        .register("/serviceworker.js", {
+          scope: "./"
+        })
+        .then(function (reg) {
+          console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+  }
+  </script>
   
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
@@ -37,87 +108,216 @@
 
 </head>
 
-  <body>
+<nav class="w-full md:w-1/4 lg:w-1/5 md:h-full bg-orange-50 fixed md:relative left-0 bottom-0 flex md:flex-col justify-between md:justify-start px-6 py-4 md:p-8 md:gap-4 z-10 shadow-3xl md:shadow-none ">
+      <a href="/" class="flex flex-col md:flex-row items-center gap-0 md:gap-2 ">
+        <svg class="w-12 md:w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 16.25H15V7.5H12V16.25H9V7.5H6V16.25C6 18.9 8.49 21.05 11.625 21.2125V32.5H15.375V21.2125C18.51 21.05 21 18.9 21 16.25V7.5H18V16.25ZM25.5 12.5V22.5H29.25V32.5H33V7.5C28.86 7.5 25.5 10.3 25.5 12.5Z" fill="currentColor" />
+        </svg>
+        <span class="text-sm md:text-2xl font-medium md:font-gelica">Recipes</span>
+      </a>
 
-  	<a class="site-title fixed bg-blue p1 no-line-height top-0 left-0 z4" href="/">
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 227 227" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch Beta 3.3.2 (12041) - http://www.bohemiancoding.com/sketch -->
-    <title>logo copy</title>
-    <desc>Created with Sketch Beta.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="logo-copy" sketch:type="MSLayerGroup" fill="#FFFFFF">
-            <path d="M113.5,207 C165.138624,207 207,165.138624 207,113.5 C207,61.8613759 165.138624,20 113.5,20 C61.8613759,20 20,61.8613759 20,113.5 C20,165.138624 61.8613759,207 113.5,207 L113.5,207 Z M113.5,227 L113.5,227 C50.8156809,227 0,176.184319 0,113.5 C0,50.8156809 50.8156809,0 113.5,0 C176.184319,0 227,50.8156809 227,113.5 C227,176.184319 176.184319,227 113.5,227 L113.5,227 Z" id="Shape" sketch:type="MSShapeGroup"></path>
-            <g id="knife" transform="translate(100.444365, 117.673654) rotate(45.000000) translate(-100.444365, -117.673654) translate(32.944365, 98.173654)" sketch:type="MSShapeGroup">
-                <path d="M84.8406926,17.2276434 L84.8406926,10.3276433 L121.425959,10.3276433 C123.239968,10.3276433 124.743013,11.8547374 124.743013,13.7776433 C124.743013,15.7005492 123.239968,17.2276433 121.425959,17.2276433 L84.8406926,17.2276434 Z M121.425959,27.2276433 C128.79866,27.2276433 134.743013,21.1881765 134.743013,13.7776433 C134.743013,6.36711016 128.79866,0.327643333 121.425959,0.327643333 L79.8406926,0.327643333 L74.8406926,0.327643333 L74.8406926,5.32764333 L74.8406926,22.2276433 L74.8406926,27.2276433 L79.8406926,27.2276433 L121.425959,27.2276433 L121.425959,27.2276433 Z" id="Shape"></path>
-                <path d="M42.8784414,28.2053959 C37.2399696,26.9331427 30.579202,21.6833442 23.2201288,13.293639 C20.4167741,10.0976768 24.8641609,15.7531155 20.6881137,10.3276437 L74.3230319,10.3276438 L74.3230319,28.4943094 L45.3378631,28.49431 C44.5535914,28.49431 43.7347403,28.3986095 42.8784414,28.2053959 Z M79.323031,38.49431 L84.323031,38.49431 L84.323031,33.49431 L84.323031,5.32764333 L84.323031,0.327643333 L79.323031,0.327643333 L10.373034,0.327643333 L0.214850611,0.327643333 L6.41083447,8.37739328 C10.7163464,13.9710641 12.7119335,16.4785814 15.7023967,19.8878565 C24.3571851,29.7547408 32.3975833,36.0919188 40.6773965,37.960159 C42.2393166,38.3125874 43.7942062,38.4943099 45.3378629,38.49431 L79.323031,38.49431 Z" id="Shape"></path>
-            </g>
-            <g id="fork" transform="translate(116.291901, 118.192155) rotate(45.000000) translate(-116.291901, -118.192155) translate(96.791901, 49.192155)" sketch:type="MSShapeGroup">
-                <path d="M14.6827731,47.7007172 L14.6827731,132.30035 C14.6827731,135.061774 16.9213494,137.30035 19.6827731,137.30035 C22.4441969,137.30035 24.6827731,135.061774 24.6827731,132.30035 L24.6827731,47.7007172 C24.6827731,44.9392935 22.4441969,42.7007172 19.6827731,42.7007172 C16.9213494,42.7007172 14.6827731,44.9392935 14.6827731,47.7007172 L14.6827731,47.7007172 Z" id="Shape"></path>
-                <path d="M38.6827731,32.9433579 C38.6827731,43.4367682 30.1761834,51.9433579 19.6827731,51.9433579 C9.18936286,51.9433579 0.682773109,43.4367682 0.682773109,32.9433579 L38.6827731,32.9433579 L38.6827731,32.9433579 Z M0.682773109,0.3572034 L8.071662,0.3572034 L8.071662,32.9433579 L0.682773109,32.9433579 L0.682773109,0.3572034 L0.682773109,0.3572034 Z M31.2938842,0.3572034 L38.6827731,0.3572034 L38.6827731,32.9433579 L31.2938842,32.9433579 L31.2938842,0.3572034 L31.2938842,0.3572034 Z M15.9883287,0.3572034 L23.3772176,0.3572034 L23.3772176,32.9433579 L15.9883287,32.9433579 L15.9883287,0.3572034 L15.9883287,0.3572034 Z" id="Oval-2"></path>
-            </g>
-        </g>
-    </g>
-</svg>
-  <h1 class="hide">Chowdown</h1>
-</a>
+      <a href="/search" class="flex flex-col md:flex-row items-center gap-0 md:gap-2 text-primary">
+        <svg class="w-12 md:w-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13 21.5C13 16.8056 16.8056 13 21.5 13C26.1944 13 30 16.8056 30 21.5C30 23.8248 29.0667 25.9315 27.5544 27.4661C27.5392 27.4801 27.5241 27.4946 27.5093 27.5093C27.4946 27.5241 27.4801 27.5392 27.4661 27.5544C25.9315 29.0667 23.8248 30 21.5 30C16.8056 30 13 26.1944 13 21.5ZM28.502 30.6233C26.5628 32.1139 24.1349 33 21.5 33C15.1487 33 10 27.8513 10 21.5C10 15.1487 15.1487 10 21.5 10C27.8513 10 33 15.1487 33 21.5C33 24.1349 32.1139 26.5628 30.6233 28.502L37.5607 35.4393C38.1464 36.0251 38.1464 36.9749 37.5607 37.5607C36.9749 38.1465 36.0251 38.1465 35.4393 37.5607L28.502 30.6233Z" fill="currentColor" />
+        </svg>
+        <span class="text-sm md:text-2xl font-medium md:font-gelica">Search</span>
+      </a>
 
-    <div class="page-content">
-        <div class="search container max-width-2">
-		<div id="search-container">
-			<h3 class="center mb3 blue">Chowdown Search</h3>
-		<input type="text" id="search-input" placeholder="search titles or ingredients...">
-		</div>
+      <a href="#" class="flex flex-col md:flex-row items-center gap-0 md:gap-2 coming-soon">
+        <svg class="w-12 md:w-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 12C14.1184 12 13 13.1184 13 14.5V34C13 34.8284 12.3284 35.5 11.5 35.5C10.6716 35.5 10 34.8284 10 34V14.5C10 11.4616 12.4616 9 15.5 9H36.5C37.3284 9 38 9.67157 38 10.5V30.5C38 31.3284 37.3284 32 36.5 32C35.6716 32 35 31.3284 35 30.5V12H15.5Z" fill="#212121"/><path d="M28 34H20V41C20 41.404 20.244 41.77 20.618 41.924C20.992 42.082 21.42 41.994 21.708 41.708L24 39.416L26.292 41.708C26.484 41.9 26.74 42 27 42C27.128 42 27.26 41.976 27.382 41.924C27.756 41.77 28 41.404 28 41V34Z" fill="#212121"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15 32C13.8959 32 13 32.895 13 34C13 35.105 13.8959 36 15 36H16.5C17.3284 36 18 36.6716 18 37.5C18 38.3284 17.3284 39 16.5 39H15C12.2401 39 10 36.763 10 34C10 31.237 12.2401 29 15 29H36.5C37.0698 29 37.5904 29.3228 37.8437 29.8332C38.0969 30.3436 38.0392 30.9535 37.6945 31.4072C37.2984 31.9288 36.9878 32.8638 36.9685 33.9451C36.9493 35.0203 37.2227 35.98 37.6884 36.5847C38.0372 37.0376 38.0983 37.6493 37.8459 38.1622C37.5935 38.6751 37.0716 39 36.5 39H31.5C30.6716 39 30 38.3284 30 37.5C30 36.6716 30.6716 36 31.5 36H34.193C34.0242 35.297 33.9567 34.577 33.969 33.8914C33.9802 33.264 34.0589 32.6209 34.2098 32H15Z" fill="#212121"/><path d="M17.5 27C18.3284 27 19 26.3284 19 25.5C19 24.6716 18.3284 24 17.5 24C16.6716 24 16 24.6716 16 25.5C16 26.3284 16.6716 27 17.5 27Z" fill="#212121"/><path d="M17.5 17C18.3284 17 19 16.3284 19 15.5C19 14.6716 18.3284 14 17.5 14C16.6716 14 16 14.6716 16 15.5C16 16.3284 16.6716 17 17.5 17Z" fill="#212121"/><path d="M17.5 22C18.3284 22 19 21.3284 19 20.5C19 19.6716 18.3284 19 17.5 19C16.6716 19 16 19.6716 16 20.5C16 21.3284 16.6716 22 17.5 22Z" fill="#212121"/></svg>
+        <span class="label text-sm md:text-2xl font-medium md:font-gelica">Books</span>
+      </a>
+      <a href="https://github.com/clarklab/chowdown" class="flex flex-col md:flex-row items-center gap-0 md:gap-2" target="_blank">
+        <svg class="w-12 md:w-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 8C17.9256 8 13 12.9256 13 19V28.5C13 29.8816 11.8816 31 10.5 31C9.67157 31 9 31.6716 9 32.5C9 33.3284 9.67157 34 10.5 34H37.5C38.3284 34 39 33.3284 39 32.5C39 31.6716 38.3284 31 37.5 31C36.1184 31 35 29.8816 35 28.5V19C35 12.9256 30.0744 8 24 8ZM32 28.5C32 29.4003 32.2161 30.25 32.5994 31H15.4006C15.7839 30.25 16 29.4003 16 28.5V19C16 14.5824 19.5824 11 24 11C28.4176 11 32 14.5824 32 19V28.5ZM26.4 36C26.702 36 26.986 36.136 27.176 36.37C27.366 36.604 27.442 36.912 27.38 37.206C27.034 38.85 25.644 40 24.002 40C22.36 40 20.97 38.85 20.624 37.206C20.562 36.912 20.636 36.604 20.826 36.37C21.016 36.136 21.3 36 21.602 36H26.4Z" fill="#212121"/></svg>
+        <span class="text-sm md:text-2xl font-medium md:font-gelica" >Updates</span>
+      </a>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Select all links with the .coming-soon class
+      document.querySelectorAll('.coming-soon').forEach(link => {
+        link.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+
+          // Find the inner element with the .label class
+          const label = this.querySelector('.label');
+          if (label) {
+            label.textContent = 'Soon'; // Change the text content to "Soon"
+          }
+        });
+      });
+    });
+  </script>
+
+
+  <body class="flex h-full font-inter bg-orange-50 text-orange-950">
+
+        <div class="content w-full md:w-4/5 p-6 h-full overflow-scroll">
+  <div class="search container max-width-2 mt-4">
+    <div id="search-container" class="relative">
+
+      <div id="filter" class="icon absolute top-2 right-2 p-0.5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-6">
+          <path d="M6.5 2.25a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0V4.5h6.75a.75.75 0 0 0 0-1.5H6.5v-.75ZM11 6.5a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0v-.75h2.25a.75.75 0 0 0 0-1.5H11V6.5ZM5.75 10a.75.75 0 0 1 .75.75v.75h6.75a.75.75 0 0 1 0 1.5H6.5v.75a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75ZM2.75 7.25H8.5v1.5H2.75a.75.75 0 0 1 0-1.5ZM4 3H2.75a.75.75 0 0 0 0 1.5H4V3ZM2.75 11.5H4V13H2.75a.75.75 0 0 1 0-1.5Z" />
+        </svg>
+      </div>
+
+      <input
+        class="block w-full rounded-md bg-white px-4 py-2 text-xl text-gray-900 outline outline-2 -outline-offset-1 outline-gray-500 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary focus:ring-[6px] focus:ring-red-200"
+        type="text"
+        id="search-input"
+        placeholder="search titles or ingredients..."
+        autofocus
+      >
+
+      <div id="filters" class="flex block gap-4 mt-4">
+
+
+      <div class="suggestions w-full mt-4 text-lg flex flex-col gap-2">
+      	<span class="text-red-950 md:text-primary uppercase font-semibold text-center">INGREDIENTS</span>
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-red-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">chicken</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-red-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">lentils</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-red-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">beef</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-red-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">butter</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-red-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">garlic</span> 
+        <span class="suggestion cursor-pointer text-primary text-xl px-3 py-3 rounded-lg bg-red-200 text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">cheese</span>
+      </div>
+
+
+      
+
+<!-- Step 1: Collect all tags from recipes -->
+
+
+<!-- Step 2: Convert collected tags into an array -->
+
+
+<!-- Step 3: Output tags in the correct format -->
+<div class="suggestions w-full mt-4 text-lg flex flex-col gap-2">
+  <span class="text-red-950 md:text-primary uppercase font-semibold text-center">TAGS</span>     
+  
+    
+      <span class="suggestion cursor-pointer text-white text-xl px-3 py-3 rounded-lg bg-primary text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">keto</span>
+    
+  
+    
+      <span class="suggestion cursor-pointer text-white text-xl px-3 py-3 rounded-lg bg-primary text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">meat</span>
+    
+  
+    
+  
+    
+      <span class="suggestion cursor-pointer text-white text-xl px-3 py-3 rounded-lg bg-primary text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">chicken</span>
+    
+  
+    
+  
+    
+      <span class="suggestion cursor-pointer text-white text-xl px-3 py-3 rounded-lg bg-primary text-center md:hover:scale-105 md:hover:rotate-1 transition underline underline-offset-2">asian</span>
+    
+  
 </div>
 
-<div class="clearfix">
-<div class="recipes xs-px1 xs-mt2 center" id="results-container">
+
+
 
 </div>
+
+
+    </div>
+  </div>
+
+  <div id="results" class="recipes hidden mb-24">
+    <h2 class="uppercase text-primary font-semibold mt-8 mb-4">Search Results</h2>
+    <div id="results_list" class="grid h-full grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+      
+  </div>
 </div>
-
-
-
-
 
 <!-- Script pointing to search-script.js -->
 <script src="/plugins/simple-jekyll-search.min.js" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
-  searchResultTemplate: '<div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2 left-align"><a class="block relative bg-blue" href="{url}"><div class="image ratio bg-cover" style="background-image:url(/images/{image});"></div><h1 class="title p2 m0 absolute bold white bottom-0 left-0">{title}</h1></a></div>'
-})
-</script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Get elements
+  const searchInput = document.getElementById('search-input');
+  const filters = document.getElementById('filters');
+  const results = document.getElementById('results');
+  const filterButton = document.getElementById('filter');
 
-<script>
-	$( document ).ready(function() {
-    $('#search-input').on('input', function() {
-    	currentHeight = $('#search-container').outerHeight();
-      $('.search').addClass('used').css('height', currentHeight);
-	});
-	});
-	
-</script>
-    </div>
-
-  <footer class="footer bg-darken-1 clearfix py4 mt3">
-
-  <div class="container px3 sm-px4">
-
-    <div class="clearfix">
-      <div class="sm-col sm-col-6">
-        <p class="left-align mb2"><a href="/search">Search</a>  | <a href="/blog">Blog</a> | Subscribe <a href="/feed.xml">via RSS</a></p>
-      </div>
-    </div>
+  // Function to toggle filters visibility
+  function toggleFilters() {
+    const filtersAreHidden = filters.classList.contains('hidden');
     
-  </div>
+    // Toggle filters visibility
+    filters.classList.toggle('hidden', !filtersAreHidden);
+    filters.classList.toggle('block', filtersAreHidden);
+    
+    // Correct opacity logic
+    if (filtersAreHidden) {
+      filterButton.classList.remove('opacity-30'); // Remove opacity when filters are shown
+    } else {
+      filterButton.classList.add('opacity-30'); // Add opacity when filters are hidden
+    }
+  }
 
-</footer>
+  // Function to show results and hide filters
+  function showResults() {
+    filters.classList.add('hidden');
+    filters.classList.remove('block');
+    results.classList.remove('hidden');
+    results.classList.add('block');
+
+    // Ensure the filter button gets opacity-30 when filters are hidden
+    filterButton.classList.add('opacity-30');
+  }
+
+  // Parse URL parameters
+  const params = new URLSearchParams(window.location.search);
+  const tag = params.get('tag');
+
+  // Initialize SimpleJekyllSearch
+  const simpleSearch = SimpleJekyllSearch({
+    searchInput,
+    resultsContainer: document.getElementById('results_list'),
+    noResultsText: 'No results (yet), but our search is janky. Try the same term again, right now, or try a suggested search term above...',
+    json: '/search.json',
+    searchResultTemplate: '<a class="recipe md:hover:scale-105 md:hover:rotate-1 transition" href="{url}"><canvas class="aspect-video w-full rounded-xl bg-gray-100 mb-1 bg-cover bg-center" style="background-image:url({image});"></canvas><h1 class="font-semibold leading-tight">{title}</h1></a>',
+    success: () => {
+      console.log('Search initialized successfully');
+
+      // If a tag is present, trigger search and update UI
+      if (tag) {
+        searchInput.value = tag;
+        setTimeout(() => {
+          simpleSearch.search(tag);
+          showResults();
+        }, 100);
+      }
+    },
+  });
+
+  // Event listener for clicking on suggested tags
+  document.querySelectorAll('.suggestion').forEach(item => {
+    item.addEventListener('click', function () {
+      searchInput.value = this.textContent;
+      simpleSearch.search(this.textContent);
+      showResults();
+    });
+  });
+
+  // Event listener for toggling filters
+  filterButton.addEventListener('click', toggleFilters);
+});
+
+
+
+</script>
+
+
+
 
 
   </body>

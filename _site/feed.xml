@@ -5,8 +5,8 @@
     <description>The plain text recipe database for hackers</description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Mar 2022 14:33:44 +0000</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2022 14:33:44 +0000</lastBuildDate>
+    <pubDate>Sun, 11 May 2025 23:29:22 +0000</pubDate>
+    <lastBuildDate>Sun, 11 May 2025 23:29:22 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -20,11 +20,33 @@
       </item>
     
       <item>
+        <title>Broccoli and Cauliflower Gratin with Sausage</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/broccoli-and-cauliflower-gratin.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/broccoli-and-cauliflower-gratin.html</guid>
+        
+        <category>keto</category>
+        
+        
+      </item>
+    
+      <item>
         <title>Chicken Taco Soup</title>
         <description>
 </description>
         <link>http://0.0.0.0:4000/recipes/chicken-taco-soup.html</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/recipes/chicken-taco-soup.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>El Dorado Beef Casserole</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/el-dorado-beef-casserole.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/el-dorado-beef-casserole.html</guid>
         
         
       </item>
@@ -42,7 +64,9 @@
         
         <category>asian,</category>
         
-        <category>main</category>
+        <category>main,</category>
+        
+        <category>spicy</category>
         
         
       </item>
@@ -70,6 +94,50 @@
 </description>
         <link>http://0.0.0.0:4000/recipes/mexican-meatloaf.html</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/recipes/mexican-meatloaf.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Pelmini</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/pelmeni.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/pelmeni.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sichuan Beef</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/sichuan-beef.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/sichuan-beef.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Zuppa Toscana</title>
+        <description>
+</description>
+        <link>http://0.0.0.0:4000/recipes/zuppa-toscana.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/recipes/zuppa-toscana.html</guid>
+        
+        <category>meat,</category>
+        
+        <category>pork,</category>
+        
+        <category>main,</category>
+        
+        <category>italian,</category>
+        
+        <category>bacon,</category>
+        
+        <category>sausage,</category>
+        
+        <category>spicy</category>
         
         
       </item>

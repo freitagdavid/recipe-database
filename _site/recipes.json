@@ -3,26 +3,51 @@
 [
     {
         "title": "Borscht",
-        "image": "images/large/beet-borscht.jpg"
+        "image": "/images/beet-borscht.jpg"
+    },
+
+    {
+        "title": "Broccoli and Cauliflower Gratin with Sausage",
+        "image": "/images/broccoli-and-cauliflower-gratin-with-sausage.avif"
     },
 
     {
         "title": "Chicken Taco Soup",
-        "image": "images/large/chicken-taco-soup.jpg"
+        "image": "/images/chicken-taco-soup.jpg"
+    },
+
+    {
+        "title": "El Dorado Beef Casserole",
+        "image": "/images/el-dorado-beef-casserole.webp"
     },
 
     {
         "title": "General Tsao Chicken",
-        "image": "images/large/general-tsao.jpg"
+        "image": "/images/general-tsao.jpg"
     },
 
     {
         "title": "Keto Chicken Pesto Casserole",
-        "image": "images/large/keto-pesto-chicken.jpg"
+        "image": "/images/keto-pesto-chicken.jpg"
     },
 
     {
         "title": "Mexican Meatloaf",
-        "image": "images/large/mexican-meatloaf.jpg"
+        "image": "/images/mexican-meatloaf.jpg"
+    },
+
+    {
+        "title": "Pelmini",
+        "image": "/images/"
+    },
+
+    {
+        "title": "Sichuan Beef",
+        "image": "/images/sichuan-beef.jpg"
+    },
+
+    {
+        "title": "Zuppa Toscana",
+        "image": "/images/zuppa-toscana.jpg"
     }
 ]
