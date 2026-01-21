@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chowdown</title>
+    <description>The plain text recipe database for hackers</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 21 Jan 2026 22:29:02 +0000</pubDate>
+    <lastBuildDate>Wed, 21 Jan 2026 22:29:02 +0000</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Anthony Bourdain: French Onion</title>
+        <description>&lt;p&gt;HALF-ASSED ALTERNATIVE&lt;/p&gt;
+
+&lt;p&gt;Your broiler sucks. Your oven isn’t much better. Can’t find those ovenproof crocks anywhere. And you ain’t ponying up for a damn propane torch, ‘cause your kid’s got pyromaniac tendencies. You can simply toast cheese over the croutons on a sheet pan, and float them as garnish on the soup. Not exactly classic-but still good.&lt;/p&gt;
+
+&lt;p&gt;NOTE ON THE PROPANE TORCH&lt;/p&gt;
+
+&lt;p&gt;This is a very handy-dandy plece of equipment, especially if your stove is not the greatest. Nearly all professional kitchens have them; they’re not very expensive and they can be used for a variety of sneaky tasks, such as easily caramelizing the top of crème brûlée or toasting meringues&lt;/p&gt;
+</description>
+        <link>/recipes/anthony-bourdain-french-onion.html</link>
+        <guid isPermaLink="true">/recipes/anthony-bourdain-french-onion.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Borscht</title>
+        <description>
+</description>
+        <link>/recipes/beet-borscht.html</link>
+        <guid isPermaLink="true">/recipes/beet-borscht.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Broccoli and Cauliflower Gratin with Sausage</title>
+        <description>
+</description>
+        <link>/recipes/broccoli-and-cauliflower-gratin.html</link>
+        <guid isPermaLink="true">/recipes/broccoli-and-cauliflower-gratin.html</guid>
+        
+        <category>keto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Chicken Taco Soup</title>
+        <description>
+</description>
+        <link>/recipes/chicken-taco-soup.html</link>
+        <guid isPermaLink="true">/recipes/chicken-taco-soup.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>El Dorado Beef Casserole</title>
+        <description>
+</description>
+        <link>/recipes/el-dorado-beef-casserole.html</link>
+        <guid isPermaLink="true">/recipes/el-dorado-beef-casserole.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>General Tsao Chicken</title>
+        <description>
+</description>
+        <link>/recipes/general-tsao.html</link>
+        <guid isPermaLink="true">/recipes/general-tsao.html</guid>
+        
+        <category>meat,</category>
+        
+        <category>chicken,</category>
+        
+        <category>asian,</category>
+        
+        <category>main,</category>
+        
+        <category>spicy</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Keto Chicken Pesto Casserole</title>
+        <description>&lt;p&gt;From https://www.dietdoctor.com/recipes/keto-pesto-chicken-casserole
+7 Servings&lt;/p&gt;
+</description>
+        <link>/recipes/keto-pesto-chicken.html</link>
+        <guid isPermaLink="true">/recipes/keto-pesto-chicken.html</guid>
+        
+        <category>chicken,</category>
+        
+        <category>casserole,</category>
+        
+        <category>keto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mexican Meatloaf</title>
+        <description>
+</description>
+        <link>/recipes/mexican-meatloaf.html</link>
+        <guid isPermaLink="true">/recipes/mexican-meatloaf.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Pelmini</title>
+        <description>
+</description>
+        <link>/recipes/pelmeni.html</link>
+        <guid isPermaLink="true">/recipes/pelmeni.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sichuan Beef</title>
+        <description>
+</description>
+        <link>/recipes/sichuan-beef.html</link>
+        <guid isPermaLink="true">/recipes/sichuan-beef.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

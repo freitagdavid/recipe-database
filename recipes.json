@@ -1,0 +1,58 @@
+
+
+[
+    {
+        "title": "Anthony Bourdain: French Onion",
+        "image": "/images/anthony-french-onion.png"
+    },
+
+    {
+        "title": "Borscht",
+        "image": "/images/beet-borscht.jpg"
+    },
+
+    {
+        "title": "Broccoli and Cauliflower Gratin with Sausage",
+        "image": "/images/broccoli-and-cauliflower-gratin-with-sausage.avif"
+    },
+
+    {
+        "title": "Chicken Taco Soup",
+        "image": "/images/chicken-taco-soup.jpg"
+    },
+
+    {
+        "title": "El Dorado Beef Casserole",
+        "image": "/images/el-dorado-beef-casserole.webp"
+    },
+
+    {
+        "title": "General Tsao Chicken",
+        "image": "/images/general-tsao.jpg"
+    },
+
+    {
+        "title": "Keto Chicken Pesto Casserole",
+        "image": "/images/keto-pesto-chicken.jpg"
+    },
+
+    {
+        "title": "Mexican Meatloaf",
+        "image": "/images/mexican-meatloaf.jpg"
+    },
+
+    {
+        "title": "Pelmini",
+        "image": "/images/"
+    },
+
+    {
+        "title": "Sichuan Beef",
+        "image": "/images/sichuan-beef.jpg"
+    },
+
+    {
+        "title": "Zuppa Toscana",
+        "image": "/images/zuppa-toscana.jpg"
+    }
+]
