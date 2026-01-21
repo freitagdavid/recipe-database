@@ -8,14 +8,34 @@ jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
-      - name: pull and setup environment
-        uses: actions/checkout@v4
-      - name: setup environment
-        uses: jdx/mise-action@v3
-      - name: build site
-        run: jekyll build
-      - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+      - uses: actions/checkout@v4
+      - uses: actions/jekyll-build-pages@v1
+      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-artifact@v4
+      # - name: pull and setup environment
+      #   uses: actions/checkout@v4
+      # - name: setup environment
+      #   uses: jdx/mise-action@v3
+      # - name: build site
+      #   run: jekyll build
+      # - name: 🚀 deploy
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./_site
+
+# jobs:
+#   jekyll:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: pull and setup environment
+#         uses: actions/checkout@v4
+#       - name: setup environment
+#         uses: jdx/mise-action@v3
+#       - name: build site
+#         run: jekyll build
+#       - name: 🚀 deploy
+#         uses: peaceiris/actions-gh-pages@v4
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./_site
