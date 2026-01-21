@@ -6,7 +6,7 @@ language: "en"
 lang_direction: "ltr"
 color: "#F53200"
 github_username:  freitagdavid
-baseurl: "/recipe-database"
+baseurl: "https://freitagdavid.github.io/recipe-database"
 
 # Build settings
 markdown: kramdown
