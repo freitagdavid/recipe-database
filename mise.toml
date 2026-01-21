@@ -1,0 +1,4 @@
+[tools]
+"gem:bundler" = "latest"
+"gem:jekyll" = "latest"
+ruby = "latest"

@@ -2,12 +2,10 @@
 title: Chowdown
 email: your-email@domain.com
 description: The plain text recipe database for hackers
-baseurl: "https://chowdown.io"
 language: "en"
 lang_direction: "ltr"
 color: "#F53200"
-twitter_username: clarklab
-github_username:  clarklab
+github_username:  freitagdavid
 
 # Build settings
 markdown: kramdown
